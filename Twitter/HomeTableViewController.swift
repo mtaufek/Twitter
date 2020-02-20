@@ -16,8 +16,7 @@ class HomeTableViewController: UITableViewController {
     let myRefreshControl = UIRefreshControl()
     override func viewDidLoad() {
            super.viewDidLoad()
-           loadTweet()
-        
+        loadTweet()
         myRefreshControl.addTarget(self, action: #selector(loadTweet), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
        }
